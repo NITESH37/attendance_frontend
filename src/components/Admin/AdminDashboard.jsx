@@ -8,6 +8,8 @@ import ListCourse from "./ListCourse";
 import Register from "./Register";
 import AttendanceReport from "./AttendanceReport";
 import ListStudent from "./ListStudent";
+import AddDuration from "./addDuration";
+import ListDuration from "./ListDuration";
 
 const AdminDashboard = () => {
   const { userInfo } = useSelector((state) => state.auth);
@@ -32,6 +34,8 @@ const AdminDashboard = () => {
           <Route path="/attendanceReport" element={<AttendanceReport />} />
           <Route path="/add-course" element={<AddCourse />} />
           <Route path="/list-course" element={<ListCourse />} />
+          <Route path="/add-duration" element={<AddDuration />} />
+          <Route path="/list-duration" element={<ListDuration />} />
           <Route path="/list-students" element={<ListStudent />} />
         </Routes>
       </div>

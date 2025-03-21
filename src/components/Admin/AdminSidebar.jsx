@@ -79,6 +79,20 @@ const AdminSidebar = ({ isOpen, setIsOpen }) => {
           >
             📋 All Course
           </Link>
+          <Link
+            to="/admin/dashboard/add-duration"
+            className="block p-2 hover:bg-gray-700"
+            onClick={() => setIsOpen(false)}
+          >
+            📋 Add Duration
+          </Link>
+          <Link
+            to="/admin/dashboard/list-duration"
+            className="block p-2 hover:bg-gray-700"
+            onClick={() => setIsOpen(false)}
+          >
+            📋 All Duration
+          </Link>
 
           <Link
             to="/admin/dashboard/list-students"
